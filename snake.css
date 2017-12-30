@@ -26,11 +26,12 @@
 }
 
 #scoreBoard {
-  padding-left: 700px;
+  padding-left:650px;
   position: absolute;
+  color: steelblue;
 }
 
 #score {
   position: absolute;
-  padding-left: 800px;
+  padding-left:780px;
 }
