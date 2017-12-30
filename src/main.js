@@ -14,6 +14,7 @@ const animateSnake=function() {
   paintHead(head);
   if(head.isSameCoordAs(food)) {
     snake.grow();
+    addScore();
     createFood(numberOfRows,numberOfCols);
     drawFood(food);
   }
@@ -64,5 +65,11 @@ const startGame=function() {
   animator=setInterval(animateSnake,140);
 }
 
+const addScore = function(){
+  let previousScore = getScore();
+  console.log(previousScore);
+  let newScore =  previousScore + 10;
+  updateScore(newScore);
+}
 
 window.onload=startGame;
