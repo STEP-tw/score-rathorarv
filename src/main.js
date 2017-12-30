@@ -64,4 +64,5 @@ const startGame=function() {
   animator=setInterval(animateSnake,140);
 }
 
+
 window.onload=startGame;
