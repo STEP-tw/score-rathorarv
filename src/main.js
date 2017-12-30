@@ -4,8 +4,6 @@ let numberOfRows=60;
 let numberOfCols=120;
 
 let animator=undefined;
-let score = undefined;
-
 const animateSnake=function() {
   let details=game.move();
   paintBody(details.oldHead);
