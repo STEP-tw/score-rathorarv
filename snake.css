@@ -35,3 +35,7 @@
   position: absolute;
   padding-left:780px;
 }
+.super-food {
+  background-color: green;
+  border-radius: 50%;
+}
