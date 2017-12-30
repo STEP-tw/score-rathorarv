@@ -24,3 +24,13 @@
   background-color: blue;
   border-radius: 50%;
 }
+
+#scoreBoard {
+  padding-left: 700px;
+  position: absolute;
+}
+
+#score {
+  position: absolute;
+  padding-left: 800px;
+}
