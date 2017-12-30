@@ -1,16 +1,12 @@
 let Score = function(){
-    this.score = undefined;
+    this.score = 0;
 }
 
 Score.prototype.getScore = function(){
-    this.score = getScore();
+  return this.score;
 }
 
-Score.prototype.updateScoreBoard = function(points){
-    let newScore = this.score + points;
-    updateScore(newScore);
-}
-
-Score.prototype.startingScore = function(){
-    updateScore(0);
+Score.prototype.updateScore = function(points){
+  this.score += points;
+  return this.score;
 }

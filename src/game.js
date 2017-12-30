@@ -59,11 +59,10 @@ Game.prototype.createFood=function() {
 }
 
 Game.prototype.scoreUpdation = function(){
-  this.score.getScore();
-  this.score.updateScoreBoard(10);
+  return this.score.updateScore(10);
 }
 
 Game.prototype.intializeScoreBoard = function(){
-  this.score = new Score();
-  this.score.startingScore();
+  this.score = new Score(0);
+  return this.score.updateScore(0);
 }

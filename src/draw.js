@@ -40,15 +40,10 @@ const drawFood=function(food) {
   if(food.isSuperFood())
     paintCell(food.getPosition(),"super-food");
   else
-  paintCell(food.getPosition(),"food");  
+  paintCell(food.getPosition(),"food");
 }
 
-const getScore = function(){
+const updateScoreBoard = function(score){
   let scoreBoard = document.getElementById('score');
-  return +scoreBoard.innerText;
-}
-
-const updateScore = function(score){
-  let scoreBoard = document.getElementById('score');
-  scoreBoard.innerText = score;  
+  scoreBoard.innerText = score;
 }
