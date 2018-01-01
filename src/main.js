@@ -12,7 +12,7 @@ const animateSnake=function() {
   if(game.hasSnakeEatenFood()) {
     game.grow();
     game.createFood();
-    let newScore = game.scoreUpdation();
+    let newScore = game.increaseScore();
     updateScoreBoard(newScore);
     drawFood(game.getFood());
   }
@@ -68,7 +68,7 @@ const startGame=function() {
   game.createFood();
   drawFood(game.getFood());
   addKeyListener();
-  let initialScore = game.intializeScoreBoard();
+  let initialScore = game.getScore();
   updateScoreBoard(initialScore);
   animator=setInterval(animateSnake,140);
 }

@@ -1,5 +1,5 @@
-let Score = function(){
-    this.score = 0;
+let Score = function(number=0){
+    this.score = number;
 }
 
 Score.prototype.getScore = function(){
